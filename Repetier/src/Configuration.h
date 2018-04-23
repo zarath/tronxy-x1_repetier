@@ -99,8 +99,8 @@
 #define EXT0_HEAT_MANAGER 3
 #define EXT0_WATCHPERIOD 1
 #define EXT0_PID_INTEGRAL_DRIVE_MAX 230
-#define EXT0_PID_INTEGRAL_DRIVE_MIN 40
-#define EXT0_PID_PGAIN_OR_DEAD_TIME 12
+#define EXT0_PID_INTEGRAL_DRIVE_MIN 42
+#define EXT0_PID_PGAIN_OR_DEAD_TIME 10
 #define EXT0_PID_I 0.82
 #define EXT0_PID_D 48
 #define EXT0_PID_MAX 255
@@ -139,7 +139,7 @@
 #define JAM_MIN_STEPS 10
 #define JAM_ACTION 1
 
-#define RETRACT_DURING_HEATUP true
+#define RETRACT_DURING_HEATUP trueEEPR
 #define PID_CONTROL_RANGE 20
 #define SKIP_M109_IF_WITHIN 2
 #define SCALE_PID_TO_MAX 0
@@ -226,7 +226,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define SUPPORT_CNC 0
 #define CNC_WAIT_ON_ENABLE 300
 #define CNC_WAIT_ON_DISABLE 0
-#define CNC_ENABLE_PIN -1
+#define CNC_ENABLE_PIN -1EEPR
 #define CNC_ENABLE_WITH 1
 #define CNC_DIRECTION_PIN -1
 #define CNC_DIRECTION_CW 1
@@ -288,11 +288,11 @@ It also can add a delay to wait for spindle to run on full speed.
 #define X_HOME_DIR -1
 #define Y_HOME_DIR -1
 #define Z_HOME_DIR -1
-#define X_MAX_LENGTH 150
-#define Y_MAX_LENGTH 150
+#define X_MAX_LENGTH 153
+#define Y_MAX_LENGTH 166
 #define Z_MAX_LENGTH 150
-#define X_MIN_POS 0
-#define Y_MIN_POS -10
+#define X_MIN_POS -13
+#define Y_MIN_POS -26
 #define Z_MIN_POS 0
 #define DISTORTION_CORRECTION 0
 #define DISTORTION_CORRECTION_POINTS 5
@@ -391,7 +391,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define ACK_WITH_LINENUMBER 1
 #define WAITING_IDENTIFIER "wait"
 #define ECHO_ON_EXECUTE 1
-#define EEPROM_MODE 1
+#define EEPROM_MODE 8
 #undef PS_ON_PIN
 #define PS_ON_PIN ORIG_PS_ON_PIN
 #define JSON_OUTPUT 0
@@ -491,7 +491,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define LANGUAGE_CZ_ACTIVE 0
 #define LANGUAGE_PL_ACTIVE 0
 #define LANGUAGE_TR_ACTIVE 0
-#define UI_PRINTER_NAME "X1 TMRMN"
+#define UI_PRINTER_NAME "X1 DG5DBH"
 #define UI_PRINTER_COMPANY "TronXY"
 #define UI_PAGES_DURATION 5000
 #define UI_ANIMATION 0
@@ -674,11 +674,11 @@ Values must be in range 1..255
     "yEndstopBack": 1,
     "zEndstopBack": 0,
     "deltaSegmentsPerSecondPrint": 180,
-    "deltaSegmentsPerSecondTravel": 70,
+    "deltaSegmentsPerSecondTravel": 70,xyzCalibration_cube
     "deltaDiagonalRod": 445,
     "deltaHorizontalRadius": 209.25,
     "deltaAlphaA": 210,
-    "deltaAlphaB": 330,
+    "deltaAlphaB": 330,xyzCalibration_cube
     "deltaAlphaC": 90,
     "deltaDiagonalCorrA": 0,
     "deltaDiagonalCorrB": 0,
